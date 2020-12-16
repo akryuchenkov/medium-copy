@@ -1,0 +1,7 @@
+<small *ngIf="isInvalid">Invalid Credentials</small>
+
+<div>
+  Username: <input type="text" [(ngModel)]="username">
+  Password: <input type="password" [(ngModel)]="password">
+  <button (click)="handleLogin()">Login</button>
+</div>
