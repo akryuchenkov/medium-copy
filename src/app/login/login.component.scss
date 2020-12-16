@@ -17,7 +17,7 @@ form {
   background: white;
   float: left;
   width: calc(100% - 240px);
-  padding: 30px;
+  padding: 42px;
   border-radius: 0 20px 20px 0;
   color: #7b7b7b; 
 }
@@ -54,17 +54,6 @@ input[type="text"]:focus, input[type="email"]:focus {
   box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
 }
 
-.male:before {
-  content: "\f222";
-  font-family: FontAwesome;
-  font-weight: bold;
-}
-.female:before {
-  content: "\f221";
-  font-family: FontAwesome;
-  font-weight: bold;
-}
-
 select {
   width: 100%;
   cursor: pointer;
@@ -75,6 +64,9 @@ select {
   color: #7b7b7b;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+select::-ms-expand {
+  display: none;
 }
 
 button {
