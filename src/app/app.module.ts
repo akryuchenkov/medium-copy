@@ -7,13 +7,23 @@ import {LoginComponent} from './login/login.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {ErrorComponent} from './error/error.component';
 import {FormsModule} from "@angular/forms";
+import { BuyComponent } from './components/buy/buy.component';
+import { RentComponent } from './components/rent/rent.component';
+import { SellComponent } from './components/sell/sell.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     WelcomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    BuyComponent,
+    RentComponent,
+    SellComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
