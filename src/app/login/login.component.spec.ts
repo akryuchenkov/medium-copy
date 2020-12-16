@@ -1,27 +1,26 @@
-import {Component, OnInit} from '@angular/core';
+  
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
-})
-export class LoginComponent implements OnInit {
-  username: string = "";
-  password: string = "";
-  isInvalid: boolean = false;
+import { LoginComponent } from './login.component';
 
-  constructor() {
-  }
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  let fixture: ComponentFixture<LoginComponent>;
 
-  ngOnInit() {
-  }
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ LoginComponent ]
+    })
+    .compileComponents();
+  }));
 
-  handleLogin() {
-    if (this.username === "admin" && this.password === "1234") {
-      this.isInvalid = false;
-    } else {
-      this.isInvalid = true;
-    }
-    console.log(this.username)
-  }
-}
+  beforeEach(() => {
+    fixture = TestBed.createComponent(LoginComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
