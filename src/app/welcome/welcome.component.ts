@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.scss']
+  styleUrls: ['./welcome.component.html']
 })
 export class WelcomeComponent implements OnInit {
+  username: string = "user";
 
-  constructor() { }
+  constructor(private router: ActivatedRoute) {
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.username = this.router.snapshot.params['name'];
   }
 
 }
