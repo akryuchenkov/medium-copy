@@ -1,7 +1,18 @@
 <small *ngIf="isInvalid">Invalid Credentials</small>
 
-<div>
-  Username: <input type="text" [(ngModel)]="username">
-  Password: <input type="password" [(ngModel)]="password">
-  <button (click)="handleLogin()">Login</button>
+<div class="form-wrap">
+  <div class="profile"><img src="assets/images/register.png">
+    <h1>Регистрация</h1>
+  </div>
+  <form method="post" action="form.php">
+    <div>
+      <label for="name">Username: <input type="text" [(ngModel)]="username"></label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="pass">Password: <input type="password" [(ngModel)]="password"></label>
+      <input type="text" name="email" required>
+    </div>
+    <button (click)="handleLogin()">Login</button>
+  </form> 
 </div>
