@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SellComponent } from './sell.component';
+import { WrapperFooterComponent } from './wrapper-footer.component';
 
-describe('SellComponent', () => {
-  let component: SellComponent;
-  let fixture: ComponentFixture<SellComponent>;
+describe('WrapperFooterComponent', () => {
+  let component: WrapperFooterComponent;
+  let fixture: ComponentFixture<WrapperFooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SellComponent ]
+      declarations: [ WrapperFooterComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SellComponent);
+    fixture = TestBed.createComponent(WrapperFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
