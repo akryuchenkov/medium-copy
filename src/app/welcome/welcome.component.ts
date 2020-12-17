@@ -8,6 +8,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class WelcomeComponent implements OnInit {
   username: string = "user";
+  massage: string ='Test';
  
   constructor(private router: ActivatedRoute) {
   }

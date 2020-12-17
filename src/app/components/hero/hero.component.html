@@ -1,5 +1,4 @@
-
-	<section class="hero">
+<section class="hero">
 		<header>
 			<small *ngIf="isInvalid">Invalid Credentials</small>
 			<div class="wrapper">
@@ -12,9 +11,24 @@
 						<li><a class="a" href="/sell">Sell</a></li>
 						<li><a class="a" href="/about">About</a></li>
 						<li><a class="a" href="/contact">Contact</a></li>
+						<li> <button *ngIf= "IsCollapsed"(dblclick)="toggleCollapse()" href="/login" class="login_btn">Login</button></li>
+
+						<li> <button *ngIf= "IsRCollapsed"(dblclick)="toggleRCollapse()" href="/login" class="login_btn">Регистрация</button></li>
+
+						<li> <button *ngIf= "!IsRCollapsed"(dblclick)="toggleRCollapse()" href="/login" class="login_btn">Скрыть</button></li>
+						<li> <button *ngIf= "!IsRCollapsed"(click)="handleRegistration()" href="/login" class="login_btn">Зарегестрироваться</button></li>
+
+						<div *ngIf="!IsRCollapsed">
+							<li> <p class="p">Почта:</p> <input class="input" type="text" [(ngModel)]="username"></li>
+							<li> <p class="p">Пароль:</p> <input class="input" type="password" [(ngModel)]="password"></li>
+							</div>
+						<li> <button *ngIf= "!IsCollapsed"(dblclick)="toggleCollapse()" href="/login" class="login_btn">Cкрыть</button></li>
+						<li> <button *ngIf= "!IsCollapsed"(click)="handleLogin()" href="/login" class="login_btn">Войти</button></li>
+
+						<div *ngIf="!IsCollapsed">
 						<li> <p class="p">Username:</p> <input class="input" type="text" [(ngModel)]="username"></li>
 						<li> <p class="p">Password:</p> <input class="input" type="password" [(ngModel)]="password"></li>
-						<li> <button (click)="handleLogin()" href="/login" class="login_btn">Login</button></li>
+						</div>
 					</ul>
 				</nav>
 			</div>

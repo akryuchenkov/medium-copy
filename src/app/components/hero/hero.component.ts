@@ -7,13 +7,32 @@ import {Router, Routes} from "@angular/router";
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
+  IsRCollapsed: boolean= true;
+  IsCollapsed :boolean = true;
 username: string = "";
   password: string = "";
   isInvalid: boolean = false;
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
+
+  toggleCollapse(){
+      this.IsCollapsed = !this.IsCollapsed;
+    }
+
+    toggleRCollapse(){
+      this.IsRCollapsed=!this.IsRCollapsed;
+    }
 
   ngOnInit(){}
-  
+  handleRegistration() {
+    if (this.username === "admin" && this.password === "1234") {
+      this.isInvalid = false;
+      this.router.navigate(['welcome', this.username]);
+    } else {
+      this.isInvalid = true;
+    }
+    console.log(this.username);
+    alert ("Вы уверены?");
+  }
 
   handleLogin() {
     if (this.username === "admin" && this.password === "1234") {
@@ -23,6 +42,6 @@ username: string = "";
       this.isInvalid = true;
     }
     console.log(this.username);
-    alert ("Done");
+    alert ("Удачных покупок на нашем сайте");
   }
 }
