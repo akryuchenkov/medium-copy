@@ -130,6 +130,10 @@ header .logo{
     float: left;
 }
 
+.active {
+    background-color: #3a78ff;
+  }
+
 header a.hamburger{
     text-decoration: none;
     display: none;
