@@ -7,6 +7,7 @@ import {Router, Routes} from "@angular/router";
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
+  massage:string= '';
   IsRCollapsed: boolean= true;
   IsCollapsed :boolean = true;
   element: any = "";
@@ -50,4 +51,5 @@ username: string = "";
     console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
+ 
 }

@@ -173,7 +173,7 @@ header nav ul li{
     color: #fff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-top: 20px;
 }
 
@@ -183,7 +183,7 @@ header nav ul li{
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
-    margin-top: 13.5px;
+    
     background: transparent;
     border: none;
     cursor: pointer;
@@ -196,7 +196,7 @@ header nav ul li{
     text-decoration: none;
     color: #fff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
 }
 
@@ -206,11 +206,11 @@ header nav ul li{
     color: #fff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     padding: 10px 15px 10px 15px;
     border: 2px solid #ffffff;
     background: transparent;
-    margin-top: -10px;
+    
 }
 
 .login_btn:hover{
@@ -663,7 +663,8 @@ footer .footer > ul > li:last-child{
 
 
 footer .footer > ul > li.links{
-    width: 197px;
+    width: 190px;
+    margin-left: 125px;
 }
 
 footer ul li.links > ul > li{
