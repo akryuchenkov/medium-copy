@@ -6,8 +6,6 @@ import { HeroComponent } from './components/hero/hero.component';
 import { SearchComponent } from './components/search/search.component';
 import { ListingsComponent } from './components/listings/listings.component';
 import { WrapperFooterComponent } from './components/wrapper-footer/wrapper-footer.component';
-import { ErrorComponent } from './error/error.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -18,8 +16,7 @@ import { FormsModule } from '@angular/forms';
     SearchComponent,
     ListingsComponent,
     WrapperFooterComponent,
-    ErrorComponent,
-    WelcomeComponent,
+
     
   ],
   imports: [

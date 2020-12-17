@@ -6,15 +6,11 @@ import { AppComponent } from './app.component';
 import {ListingsComponent} from './components/listings/listings.component';
 import { SearchComponent } from './components/search/search.component';
 import { WrapperFooterComponent } from './components/wrapper-footer/wrapper-footer.component';
-import {WelcomeComponent} from "./welcome/welcome.component";
-import {ErrorComponent} from "./error/error.component";
 import { FormsModule } from '@angular/forms';
 import { from } from 'rxjs';
 
 const routes: Routes = [
   {path: 'hero', component: HeroComponent},
-  {path: 'welcome/:name', component: WelcomeComponent},
-  {path: '**', component: ErrorComponent},
   {path: 'listing',component:ListingsComponent },
   {path: 'AppComponent',component:AppComponent },
   {path: 'Search',component:SearchComponent },
