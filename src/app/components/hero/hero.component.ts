@@ -9,6 +9,7 @@ import {Router, Routes} from "@angular/router";
 export class HeroComponent implements OnInit {
   IsRCollapsed: boolean= true;
   IsCollapsed :boolean = true;
+  element: any = "";
 username: string = "";
   password: string = "";
   isInvalid: boolean = false;
@@ -43,5 +44,10 @@ username: string = "";
     }
     console.log(this.username);
     alert ("Удачных покупок на нашем сайте");
+  }
+  
+  scrollToElement($element:any): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 }
