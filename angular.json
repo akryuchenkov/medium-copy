@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Traytventyeight"
+  "defaultProject": "Traytventyeight",
+  "cli": {
+    "analytics": "fbc1a685-bece-4a0b-b428-b93dfee0fe8c"
+  }
 }

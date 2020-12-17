@@ -168,34 +168,47 @@ header nav ul li{
     margin-left: 50px;
 }
 
-header nav ul li a,
-header nav .login_btn{
+.a{
     text-decoration: none;
     color: #fff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
-
 }
 
-header nav .login_btn{
+.p{
+    text-decoration: none;
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.login_btn{
     float: right;
-    margin: 30px 0 0 50px;
-    padding: 10px 30px 11px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
     border: 2px solid #ffffff;
     background: transparent;
-
-    transition: background .1s linear;
-    -webkit-transition: background .1s linear;
-    -moz-transition: background .1s linear;
-    -o-transition: background .1s linear;
 }
 
-header nav .login_btn:hover{
+.login_btn:hover{
     background: #ffffff;
     color: #1c3655;
 }
 
+.input{
+    border-radius: 5px;
+    border: 2px solid rgb(190, 191, 255);
+}
+
+.input:focus{
+    border-color: #333;
+}
 
 
 

@@ -7,13 +7,13 @@
 				<a href="#" class="hamburger"></a>
 				<nav>
 					<ul>
-						<li><a href="buy.html">Buy</a></li>
-						<li><a href="/rent">Rent</a></li>
-						<li><a href="/sell">Sell</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/caontact">Contact</a></li>
-						<li> Username: <input type="text" [(ngModel)]="username"></li>
-						<li> Password: <input type="password" [(ngModel)]="password"></li>
+						<li><a class="a" href="buy.html">Buy</a></li>
+						<li><a class="a" href="/rent">Rent</a></li>
+						<li><a class="a" href="/sell">Sell</a></li>
+						<li><a class="a" href="/about">About</a></li>
+						<li><a class="a" href="/contact">Contact</a></li>
+						<li> <p class="p">Username:</p> <input class="input" type="text" [(ngModel)]="username"></li>
+						<li> <p class="p">Password:</p> <input class="input" type="password" [(ngModel)]="password"></li>
 						<li> <button (click)="handleLogin()" href="/login" class="login_btn">Login</button></li>
 					</ul>
 				</nav>

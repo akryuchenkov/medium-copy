@@ -22,6 +22,7 @@ username: string = "";
     } else {
       this.isInvalid = true;
     }
-    console.log(this.username)
+    console.log(this.username);
+    alert ("Done");
   }
 }
