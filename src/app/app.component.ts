@@ -5,10 +5,10 @@ import { RouterLink, RouterModule } from '@angular/router';
   selector: 'app-root',
   template: `
     <div class="page">
-  <app-hero></app-hero>
-  <app-search></app-search>
+ <!--   <app-hero></app-hero>
+   <app-search></app-search>
   <app-listings></app-listings>
-  <app-wrapper-footer></app-wrapper-footer>
+  <app-wrapper-footer></app-wrapper-footer> -->  
   <router-outlet></router-outlet>
  </div>`,
   styleUrls: ['./app.component.css']

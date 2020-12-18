@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {Router, Routes} from "@angular/router";
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+  selector: 'app-top',
+  templateUrl: './top.component.html',
+  styleUrls: ['./top.component.css']
 })
-export class HeroComponent implements OnInit {
+export class TopComponent implements OnInit {
   massage:string= '';
   IsRCollapsed: boolean= true;
   IsCollapsed :boolean = true;

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-listings',
-  templateUrl: './listings.component.html',
-  styleUrls: ['./listings.component.css']
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
 })
-export class ListingsComponent implements OnInit {
+export class MainComponent implements OnInit {
   
   IsCollapsed :boolean = true;
   constructor() { }
