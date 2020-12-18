@@ -13,10 +13,6 @@ export class ListingsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  scrollToElement($element:any): void {
-    console.log($element);
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
 
   toggleCollapse(){
     this.IsCollapsed = !this.IsCollapsed;
