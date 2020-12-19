@@ -23,6 +23,7 @@ username: string = "";
     toggleRCollapse(){
       this.IsRCollapsed=!this.IsRCollapsed;
     }
+  
 
   ngOnInit(){}
   handleRegistration() {
@@ -51,5 +52,6 @@ username: string = "";
     console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
- 
+
 }
+

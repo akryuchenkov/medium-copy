@@ -8,17 +8,15 @@
             
             <nav>
                 <ul>
-                    <li><button class="btn" (click)="scrollToElement(marker)" routerLink="/listing">Купить</button></li> <!-- Скролл до таргета, надо понять как закинуть таргет в html -->
+                    <li><button class="btn" (click)="scrollToElement(marker1)" >Купить</button></li> <!-- Скролл до таргета, надо понять как закинуть таргет в html -->
 
-                    
+                    <li><button  class="btn" (click)="scrollToElement(marker1)" >Арендовать</button></li>
 
-                    <li><button class="btn" (click)="scrollToElement(marker)" routerLink="/listing">Арендовать</button></li>
+                    <li><button class="btn" routerLink="/Sell" >Продать</button></li>
 
-                    <li><button class="btn" (click)="scrollToElement(marker)" routerLink="/listing">Продать</button></li>
+                    <li><button class="btn" (click)="scrollToElement(marker2)" routerLink="/Wrapper">Контакты</button></li>
 
-                    <li><button class="btn" (click)="scrollToElement(marker)" routerLink="/Wrapper">О нас</button></li>
-
-                    <li><button class="btn" (click)="scrollToElement(marker)" routerLink="/Wrapper">Контакты</button></li>
+                    <li><button class="btn" routerLink="/Feedback">Обратная cвязь</button></li>
     
                     <!-- Авторизация -->
                     <li> <button *ngIf= "IsCollapsed"(dblclick)="toggleCollapse()" href="/login" class="login_btn">Логин</button></li>
@@ -36,6 +34,8 @@
                         <!-- Скрытые поля авторизации -->
                     <li> <button *ngIf= "!IsCollapsed"(dblclick)="toggleCollapse()" href="/login" class="login_btn">Cкрыть</button></li>
                     <li> <button *ngIf= "!IsCollapsed"(click)="handleLogin()" href="/login" class="login_btn">Войти</button></li>
+                    
+                
 
                     <div *ngIf="!IsCollapsed">
                     <li> <p class="p">Username:</p> <input class="input" type="text" [(ngModel)]="username"></li>
@@ -57,4 +57,12 @@
         </section>
         
 </section><!--  end hero section  -->
-<h4 #marker></h4>
+
+<!-- Вызываем другие компоненты -->
+<!-- <app-test></app-test> -->
+<h4 #marker1></h4>
+<app-main></app-main>
+<h4 #marker2></h4>
+<app-foter></app-foter>
+
+

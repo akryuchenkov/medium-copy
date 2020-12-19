@@ -9,25 +9,19 @@ import { MainComponent } from './components/main/main.component';
 import { TopComponent } from './components/top/top.component';
 import { FoterComponent } from './components/foter/foter.component';
 import { NewPageforSaleComponent } from './components/new-pagefor-sale/new-pagefor-sale.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { SellAHouseComponent } from './components/sell-ahouse/sell-ahouse.component';
 
-// определение дочерних маршрутов
-const itemRoutes: Routes = [
-  { path: 'details', component: FoterComponent},
-  { path: 'stat', component: MainComponent},
-];
+
 
 const appRoutes: Routes =[
 
-  {path:"22", component:TestComponent,},
- { path: '', component: TopComponent},
-  {path: '1', component:TestComponent},
-  {path: '2', component:TopComponent},
-  {path: '3', component:MainComponent},
-  { path: '4', component:FoterComponent},
-  {path: '5', component: NewPageforSaleComponent}
-
-  
-
+ 
+  {path: '', component: TopComponent},
+  {path: 'TESTSearch', component:TestComponent},
+  {path: 'Home#1', component: NewPageforSaleComponent},
+  {path: 'Sell', component:SellAHouseComponent},
+  {path: 'Feedback',component:FeedbackComponent}
   ,
 
 ];
@@ -40,6 +34,8 @@ const appRoutes: Routes =[
     TopComponent,
     FoterComponent,
     NewPageforSaleComponent,
+    FeedbackComponent,
+    SellAHouseComponent,
   
     
   ],

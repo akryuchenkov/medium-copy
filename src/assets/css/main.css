@@ -1,5 +1,6 @@
 /*
 
+
     *****************************************
     
     
@@ -226,53 +227,6 @@ header nav .login_btn:hover{
     margin: -15px 0 0 25px;
     left: 1px;
 }
-
-/*  NewPageForSale  Secton */
-
-.NewPageForSale{
-    width: 100%;
-    height: 800px;
-    position: relative;
-    background: url('../img/hero.jpg') no-repeat bottom center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-.NewPageForSale .caption{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    margin-top: -105px;
-}
-
-.NewPageForSale .caption h2{
-    color: #fff;
-    font-family: "P22 Corinthia";
-    font-size: 100px;
-    font-weight: lighter;
-    margin: 0;
-    position: relative;
-    display: block;
-}
-
-.NewPageForSale .caption h3{
-    color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    margin: -15px 0 0 25px;
-    left: 1px;
-}
-
-
-
-
-
-
-
-
 
 /*  Search Section  */
 
@@ -745,3 +699,5 @@ footer .copyrights a.ph_link{
     font-weight: bold;
     text-decoration: none;
 }
+
+

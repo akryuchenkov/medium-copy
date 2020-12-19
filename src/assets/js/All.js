@@ -9,3 +9,5 @@ function go_scroll() {
 btn.addEventListener('click', handleButtonClick);
 
 window.scroll(x-coord,y-coord)
+
+
