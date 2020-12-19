@@ -8,6 +8,7 @@ import { TestComponent } from './components/test/test.component';
 import { MainComponent } from './components/main/main.component';
 import { TopComponent } from './components/top/top.component';
 import { FoterComponent } from './components/foter/foter.component';
+import { NewPageforSaleComponent } from './components/new-pagefor-sale/new-pagefor-sale.component';
 
 // определение дочерних маршрутов
 const itemRoutes: Routes = [
@@ -17,14 +18,13 @@ const itemRoutes: Routes = [
 
 const appRoutes: Routes =[
 
-  {path:"", component:TestComponent,},
-  {path: "", component:TestComponent},
+  {path:"22", component:TestComponent,},
  { path: '', component: TopComponent},
   {path: '1', component:TestComponent},
   {path: '2', component:TopComponent},
   {path: '3', component:MainComponent},
-  { path: '4', component:FoterComponent}
-
+  { path: '4', component:FoterComponent},
+  {path: '5', component: NewPageforSaleComponent}
 
   
 
@@ -39,6 +39,7 @@ const appRoutes: Routes =[
     MainComponent,
     TopComponent,
     FoterComponent,
+    NewPageforSaleComponent,
   
     
   ],

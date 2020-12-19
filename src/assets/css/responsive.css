@@ -1,8 +1,5 @@
 /*
 
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    Template Name   : La Casa
     
     
     *****************************************
@@ -251,7 +248,7 @@ header nav ul li{
 
 
 
-/*  Hero Section  */
+/*  Top Section  */
 
 .hero{
     width: 100%;
@@ -291,7 +288,44 @@ header nav ul li{
     left: 1px;
 }
 
+/*  NewPageForSale  Secton */
 
+.NewPageForSale{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: url('../img/Villa1.jpg') no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.NewPageForSale .caption{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -105px;
+}
+
+.NewPageForSale .caption h2{
+    color: #fff;
+    font-family: "P22 Corinthia";
+    font-size: 100px;
+    font-weight: lighter;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+.NewPageForSale .caption h3{
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: -15px 0 0 25px;
+    left: 1px;
+}
 
 
 
@@ -504,7 +538,7 @@ header nav ul li{
 
 
 
-/*  listings section  */
+/*  main section  */
 .listings{
     padding: 100px 0;
 }
@@ -632,6 +666,132 @@ header nav ul li{
 }
 
 
+/*  NewPageForSaleContent section  */
+.NewPageForSaleContent{
+    padding: 100px 0;
+}
+
+.NewPageForSaleContent ul.properties_list{
+    list-style: none;
+    overflow: hidden;
+}
+
+.NewPageForSaleContent ul.properties_list li{
+    display: block;
+    width: 30.90909090909091%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0 3.636363636363636% 3.636363636363636% 0;
+}
+
+.NewPageForSaleContent ul.properties_list li img.property_img{
+    width: 100%;
+    height: auto!important;
+    vertical-align: top;
+}
+
+
+.NewPageForSaleContent ul.properties_list li .price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 15px 20px;
+    background: #ffffff;
+    color: #514d4d;
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+
+.NewPageForSaleContent ul.properties_list li:nth-child(3n+0){
+    margin-right: 0;
+}
+
+.NewPageForSaleContent ul li .property_details{
+    width: 87.64705882352941%;
+    padding: 2.941176470588235% 5.882352941176471% 4.117647058823529% 5.882352941176471%;
+    border-bottom: 1px solid #f2f1f1;
+    border-left: 1px solid #f2f1f1;
+    border-right: 1px solid #f2f1f1;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.NewPageForSaleContent ul li:hover .property_details{
+    border-bottom: 1px solid #95badf;
+    border-left: 1px solid #95badf;
+    border-right: 1px solid #95badf;
+}
+
+.NewPageForSaleContent ul li .property_details h1{
+    color: #666464;
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 16px!important;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 28px;
+}
+
+.NewPageForSaleContent ul li .property_details h1 a{
+    text-decoration: none;
+    color: #666464;
+}
+
+.NewPageForSaleContent ul li .property_details h2{
+    color: #9d9d9d;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+.NewPageForSaleContent ul li .property_details .property_size{
+    color: #676767;
+}
+
+.NewPageForSaleContent .more_listing{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 84px 0 22px 0;
+}
+
+.NewPageForSaleContent .more_listing_btn{
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid #bfd9f1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #afcbe6;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.NewPageForSaleContent .more_listing_btn:hover{
+    color: #a0c3e5;
+    border: 2px solid #a0c3e5;    
+}
 
 
 
@@ -771,6 +931,12 @@ footer .copyrights a.ph_link{
 
 @media (max-width:1500px){
     .hero{
+        height: 800px;
+    }
+}
+
+@media (max-width:1500px){
+    .NewPageForSale{
         height: 800px;
     }
 }

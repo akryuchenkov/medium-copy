@@ -1,10 +1,5 @@
 /*
 
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    Template Name   : La Casa
-    
-    
     *****************************************
     
     
@@ -232,6 +227,44 @@ header nav .login_btn:hover{
     left: 1px;
 }
 
+/*  NewPageForSale  Secton */
+
+.NewPageForSale{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: url('../img/hero.jpg') no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.NewPageForSale .caption{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -105px;
+}
+
+.NewPageForSale .caption h2{
+    color: #fff;
+    font-family: "P22 Corinthia";
+    font-size: 100px;
+    font-weight: lighter;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+.NewPageForSale .caption h3{
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: -15px 0 0 25px;
+    left: 1px;
+}
 
 
 
@@ -454,7 +487,13 @@ header nav .login_btn:hover{
     overflow: hidden;
 }
 
-.listings ul.properties_list li{
+.listings ul.properties_list{ /*  мейн класс */
+    list-style: none;
+    overflow: hidden;
+}
+
+
+.listings ul.properties_list li{  /* Ли секция */
     display: block;
     width: 340px;
     height: auto;
@@ -463,12 +502,23 @@ header nav .login_btn:hover{
     margin: 0 40px 40px 0;
 }
 
-.listings ul.properties_list li img.property_img{
+.listings ul.properties_list li img.property_img{ /* Фото особняка */
     width: 100%;
     height: auto!important;
     vertical-align: top;
 }
 
+
+    .listings ul.properties_list li img.Background_img{ /* Фото особняка на фулл экран */
+        width: 100%;
+        height: 800px;
+        position: relative;
+        background: url('../img/property_1.jpg') no-repeat bottom center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
 
 .listings ul.properties_list li .price{
     position: absolute;
