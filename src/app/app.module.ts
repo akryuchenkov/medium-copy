@@ -11,6 +11,7 @@ import { FoterComponent } from './components/foter/foter.component';
 import { NewPageforSaleComponent } from './components/new-pagefor-sale/new-pagefor-sale.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { SellAHouseComponent } from './components/sell-ahouse/sell-ahouse.component';
+import { PromotionsComponent } from './components/promotions/promotions.component';
 
 
 
@@ -21,7 +22,8 @@ const appRoutes: Routes =[
   {path: 'TESTSearch', component:TestComponent},
   {path: 'Home#1', component: NewPageforSaleComponent},
   {path: 'Sell', component:SellAHouseComponent},
-  {path: 'Feedback',component:FeedbackComponent}
+  {path: 'Feedback',component:FeedbackComponent},
+  {path: 'Promotions',component:PromotionsComponent}
   ,
 
 ];
@@ -36,6 +38,7 @@ const appRoutes: Routes =[
     NewPageforSaleComponent,
     FeedbackComponent,
     SellAHouseComponent,
+    PromotionsComponent,
   
     
   ],
