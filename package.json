@@ -2,6 +2,7 @@
   "name": "traytventyeight",
   "version": "0.0.0",
   "scripts": {
+    "server": "json-server -w db.json",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -19,6 +20,7 @@
     "@angular/platform-browser": "~11.0.4",
     "@angular/platform-browser-dynamic": "~11.0.4",
     "@angular/router": "~11.0.4",
+    "json-server": "^0.16.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

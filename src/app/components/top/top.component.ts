@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import {Router, Routes} from "@angular/router";
 
 @Component({
@@ -7,6 +8,15 @@ import {Router, Routes} from "@angular/router";
   styleUrls: ['./top.component.css']
 })
 export class TopComponent implements OnInit {
+
+  
+  alert:boolean=false
+  addUser=new FormGroup({
+    emali: new FormControl(''),
+    password: new FormControl(''),
+
+  })
+
   massage:string= '';
   IsRCollapsed: boolean= true;
   IsCollapsed :boolean = true;
@@ -14,6 +24,9 @@ export class TopComponent implements OnInit {
 username: string = "";
   password: string = "";
   isInvalid: boolean = false;
+  
+
+
   constructor(private router: Router) {}
 
   toggleCollapse(){

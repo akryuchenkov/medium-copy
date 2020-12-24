@@ -5,7 +5,7 @@
      
         <div class="wrapper">
          
-            <a href="#" class="hamburger"></a>
+            <a routerLink="" class="hamburger"></a>
             
 
             <nav>
@@ -28,14 +28,18 @@
 
                     <!-- Скрытые поля регистрации -->
                     <li> <button *ngIf= "!IsRCollapsed"(dblclick)="toggleRCollapse()" href="/login" class="login_reg">Скрыть</button></li>
-                    <li> <button *ngIf= "!IsRCollapsed"(click)="handleRegistration()" href="/login" class="login_reg">Зарегестрироваться</button></li>
+                    
 
-                    <div *ngIf="!IsRCollapsed">
-                        <li> <p class="p">Почта:</p> <input class="input" type="text" [(ngModel)]="username"></li>
-                        <li> <p class="p">Пароль:</p> <input class="input" type="password" [(ngModel)]="password"></li>
-                        </div>
+                        <li> <button *ngIf= "!IsRCollapsed"(click)="handleRegistration()" href="/login" class="login_reg">Зарегестрироваться</button></li>
+
+                        <div *ngIf="!IsRCollapsed">
+                            <li> <p class="p">Почта:</p> <input class="input" type="text" [(ngModel)]="username"></li>
+                            <li> <p class="p">Пароль:</p> <input class="input" type="password" [(ngModel)]="password"></li>
+                            </div>
+                    
                         <!-- Скрытые поля авторизации -->
                     <li> <button *ngIf= "!IsCollapsed"(dblclick)="toggleCollapse()" href="/login" class="login_btn">Cкрыть</button></li>
+
                     <li> <button *ngIf= "!IsCollapsed"(click)="handleLogin()" href="/login" class="login_btn">Войти</button></li>
                     
                 

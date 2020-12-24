@@ -15,6 +15,7 @@ import { PromotionsComponent } from './components/promotions/promotions.componen
 
 
 
+
 const appRoutes: Routes =[
 
  
@@ -39,6 +40,7 @@ const appRoutes: Routes =[
     FeedbackComponent,
     SellAHouseComponent,
     PromotionsComponent,
+  
   
     
   ],
