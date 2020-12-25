@@ -1,27 +1,26 @@
 export class PostModel {
-    constructor(
-        private readonly _title:string,
-        private readonly _author:string,
-        private readonly _id:number,
+  constructor(
+    private readonly _title: string,
+    private readonly _author: string,
+    private readonly _id?: number
+  ) {}
 
-        ) {}
-        get titel():string{
-            return this._title;
-        }
+  get title(): string {
+    return this._title;
+  }
 
-        get author(){
-            return this._author;
-        }
+  get author() {
+    return this._author;
+  }
 
-        get id(){
-            return this._id;
-        }
+  get id() {
+    return this._id;
+  }
 
-        get dto():{titile: string, author: string}{
-            return{
-                     titile:this.titel,
-                     author:this.author,
-                };
-        }
-
-    }
+  get dto(): { title: string; author: string } {
+    return {
+      title: this.title,
+      author: this.author,
+    };
+  }
+}

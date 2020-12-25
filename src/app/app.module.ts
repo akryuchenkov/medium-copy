@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {Routes, RouterModule, } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -12,21 +12,16 @@ import { NewPageforSaleComponent } from './components/new-pagefor-sale/new-pagef
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { SellAHouseComponent } from './components/sell-ahouse/sell-ahouse.component';
 import { PromotionsComponent } from './components/promotions/promotions.component';
+import { PostsService } from './components/services/post.services';
+import { HttpClientModule } from '@angular/common/http';
 
-
-
-
-const appRoutes: Routes =[
-
- 
-  {path: '', component: TopComponent},
-  {path: 'TESTSearch', component:TestComponent},
-  {path: 'Home#1', component: NewPageforSaleComponent},
-  {path: 'Sell', component:SellAHouseComponent},
-  {path: 'Feedback',component:FeedbackComponent},
-  {path: 'Promotions',component:PromotionsComponent}
-  ,
-
+const appRoutes: Routes = [
+  { path: '', component: TopComponent },
+  { path: 'TESTSearch', component: TestComponent },
+  { path: 'Home#1', component: NewPageforSaleComponent },
+  { path: 'Sell', component: SellAHouseComponent },
+  { path: 'Feedback', component: FeedbackComponent },
+  { path: 'Promotions', component: PromotionsComponent },
 ];
 
 @NgModule({
@@ -40,13 +35,15 @@ const appRoutes: Routes =[
     FeedbackComponent,
     SellAHouseComponent,
     PromotionsComponent,
-  
-  
-    
   ],
-  imports:      [ BrowserModule,FormsModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
+  ],
 
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [PostsService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
